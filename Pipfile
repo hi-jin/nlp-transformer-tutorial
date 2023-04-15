@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "1.7.1"
+pytorch-lightning = "*"
+pandas = "*"
+transformers = "*"
+jupyter = "*"
+pytest = "*"
+wandb = "*"
+datasets = "*"
+tokenizers = "*"
+flask = "*"
+flask-cors = "*"
+gunicorn = "*"
+pillow = "*"
+torchvision = "*"
+plotly = "*"
+torchmetrics = "*"
+kaleido = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "*"
