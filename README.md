@@ -98,3 +98,26 @@ class MyTokenizer:
         return result
 ```
 </details>
+
+<br>
+
+# 3-fine-tuning-bert
+
+| Dataset | Model | Task |
+|---------|-------|------|
+| klue/ynat | bert-base-multilingual-cased | classification |
+
+## Goal
+
+## Result
+
+| metric | not trained | trained |
+|--------|-------------|---------|
+| acc | 0.08 | 0.08 |
+| f1 score | 0.78 | 0.78 |
+
+### confusion matrix
+
+| not trained | trained |
+|-------------|---------|
+| ![](./3-fine-tuning-bert/confusion_matrix_not_trained.png) | ![](./3-fine-tuning-bert/confusion_matrix_trained.png) |
