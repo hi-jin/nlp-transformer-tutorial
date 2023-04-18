@@ -108,6 +108,8 @@ class MyTokenizer:
 | klue/ynat | bert-base-multilingual-cased | classification |
 
 ## Goal
+- Learn how to use pretrained bert model
+- Learn how to get f1 score
 
 ## Result
 
