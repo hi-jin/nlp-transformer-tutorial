@@ -45,13 +45,12 @@ class Attention(nn.Module):
             reactivity += attention_mask
         attention_score = (reactivity / math.sqrt(self.dim_k)).softmax(dim=-1)
 
-        blended_vector = torch.matmul(reactivity, v) # [batch_size, num_heads, query_len, dim_k]
+        blended_vector = torch.matmul(attention_score, v) # [batch_size, num_heads, query_len, dim_k]
         blended_vector = self.__join_heads(blended_vector) # [batch_size, query_len, dim_embed]
         blended_vector = self.to_output(blended_vector)
 
         return blended_vector, attention_score
 
-    
     def __split_heads(
         self,
         x: torch.Tensor,
