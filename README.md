@@ -123,3 +123,26 @@ class MyTokenizer:
 | not trained | trained |
 |-------------|---------|
 | ![](./3-fine-tuning-bert/confusion_matrix_not_trained.png) | ![](./3-fine-tuning-bert/confusion_matrix_trained.png) |
+
+
+# 4-fine-tuning-bert
+
+| Dataset | Model | Task |
+|---------|-------|------|
+| klue/sts | skt/kogpt2-base-v2 | Text Generation |
+| - | hyunwoongko/kobart | - |
+
+## Goal
+- Learn how to use pretrained gpt model
+- Learn how to get bleu score
+
+## Result [poor-performance]
+
+| metric | gpt | bart |
+|--------|-----|------|
+| train_loss | 0.4 | 0.13 |
+| val_loss | 2.37 | 1.6 |
+| val_bleu | 0 | 0 |
+| test_bleu | 0 | 0 |
+
+> I set bleu_score n-gram to 4-gram when calculating, but it seems that the length of the target sentence is short and the learning is not excellent, so 0 points came out.  
