@@ -115,8 +115,8 @@ class MyTokenizer:
 
 | metric | not trained | trained |
 |--------|-------------|---------|
-| acc | 0.08 | 0.08 |
-| f1 score | 0.78 | 0.78 |
+| acc | 0.08 | 0.78 |
+| f1 score | 0.08 | 0.78 |
 
 ### confusion matrix
 
