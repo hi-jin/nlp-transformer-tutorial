@@ -152,3 +152,24 @@ class MyTokenizer:
 
 ## Goal
 - Learn how to implement query-key-value multihead attention
+
+
+# 6-implement-bert
+
+| Dataset | Model |
+|---------|-------|
+| klue/ynat | bert-base-multilingual-cased |
+
+## Goal
+- Learn how to implement BERT
+- Learn how to copy weights from pretrained model
+
+## Result
+
+| macro_f1_score | acc |
+|----------------|-----|
+| 0.91 | 0.92 |
+
+### confusion matrix
+
+<img src="./6-implement-bert/confusion_matrix.png" width="50%">
